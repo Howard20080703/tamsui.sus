@@ -9,6 +9,7 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: #f4f4f9;
+    overflow-x: hidden; /* 禁止水平滾動 */
 }
 
 .container {
@@ -17,8 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 500px;
-    width: 90%; /* 使用百分比指定寬度，使容器在小型設備上更靈活 */
+    width: 100%; /* 將容器寬度設為100% */
     padding: 20px;
     margin-bottom: 20px; /* 確保頁腳不會被擋住 */
 }
@@ -118,15 +118,4 @@ footer {
     width: 100%;
     text-align: center;
     margin-top: auto; /* 確保頁腳位於底部 */
-}
-
-/* 媒體查詢：小型設備 */
-@media only screen and (max-width: 600px) {
-    .container {
-        width: 95%; /* 更進一步縮小容器寬度 */
-    }
-    .logo {
-        width: 80px; /* 調整logo的大小 */
-        height: 80px;
-    }
 }

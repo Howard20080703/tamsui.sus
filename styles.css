@@ -38,7 +38,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 90%;
+    width: 80%; /* 調整寬度 */
+    max-width: 400px; /* 限制最大寬度 */
     margin: 10px 0;
     padding: 10px;
     background-color: #fff;
@@ -57,8 +58,8 @@ h1 {
     height: 40px;
     border-radius: 50%;
     margin-right: 15px;
-    max-width: 30px; /* 新增：限制圖片寬度 */
-    max-height: 30px; /* 新增：限制圖片高度 */
+    max-width: 40px; /* 調整圖片寬度 */
+    max-height: 40px; /* 調整圖片高度 */
 }
 
 .link-card span {
@@ -139,17 +140,17 @@ footer {
     }
 
     .link-card {
-        flex-direction: column;
+        flex-direction: row; /* 確保圖片和文字並排 */
         align-items: center;
-        text-align: center;
+        text-align: left;
     }
 
     .link-card img {
-        margin-bottom: 10px;
-        margin-right: 0;
+        margin-right: 15px;
+        margin-bottom: 0;
     }
 
     .link-card span {
-        text-align: center;
+        text-align: left;
     }
 }

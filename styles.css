@@ -112,7 +112,7 @@ footer {
     padding: 10px;
     background-color: #333;
     color: #fff;
-    width: 100%;
+    width: auto;
     text-align: center;
     margin-top: auto; /* 確保頁腳位於底部 */
 }

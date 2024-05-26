@@ -19,6 +19,7 @@ body {
     align-items: center;
     text-align: center;
     width: 100%; /* 將容器寬度設為100% */
+    max-width: 500px; /* 最大寬度為500px */
     padding: 20px;
     margin-bottom: 20px; /* 確保頁腳不會被擋住 */
 }
@@ -74,6 +75,7 @@ h1 {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
+    max-width: 500px; /* 最大寬度為500px */
 }
 
 .feedback-form h2 {

@@ -119,9 +119,13 @@ footer {
     margin-top: auto; /* 確保頁腳位於底部 */
 }
 
+/* styles.css */
+
+/* 原有的 CSS */
+
 @media only screen and (max-width: 600px) {
     .feedback-form h2,
     .link-card span {
-        font-size: 14px; /* 調整手機上的字體大小 */
+        font-size: 14px !important; /* 強制優先使用此字體大小 */
     }
 }

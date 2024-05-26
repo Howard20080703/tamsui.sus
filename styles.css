@@ -16,8 +16,8 @@ body {
 
 /* 標題樣式 */
 .logo {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin: 20px auto; /* 置中 */
     display: block;
@@ -26,8 +26,8 @@ body {
 h1 {
     color: #333;
     text-align: center;
-    font-size: 28px;
-    margin-top: 10px;
+    font-size: 32px;
+    margin-top: 20px;
 }
 
 /* 鏈接卡片 */

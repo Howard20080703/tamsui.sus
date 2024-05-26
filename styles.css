@@ -19,7 +19,6 @@ body {
     max-width: 500px;
     width: 100%;
     padding: 20px;
-    margin-bottom: 20px; /* 確保頁腳不會被擋住 */
     margin: 0 auto; /* 使容器居中 */
 }
 
@@ -39,9 +38,9 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 90%; /* 調整寬度 */
+    width: 90%;
     max-width: 300px; /* 限制最大寬度 */
-    margin: 10px 0;
+    margin: 10px auto; /* 調整邊距，確保居中 */
     padding: 10px;
     background-color: #fff;
     border-radius: 15px;
@@ -59,8 +58,6 @@ h1 {
     height: 40px;
     border-radius: 50%;
     margin-right: 10px; /* 調整間距 */
-    max-width: 40px; /* 調整圖片寬度 */
-    max-height: 40px; /* 調整圖片高度 */
 }
 
 .link-card span {
@@ -78,6 +75,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px; /* 限制最大寬度 */
+    margin: 0 auto; /* 使表單居中 */
 }
 
 .feedback-form h2 {
@@ -139,8 +137,9 @@ body > *:last-child {
 
     .link-card,
     .feedback-form {
-        max-width: 100%; /* 將元素最大寬度設為螢幕寬度的100% */
+        max-width: 90%; /* 將元素最大寬度設為螢幕寬度的90% */
         width: 100%;
+        margin: 10px auto; /* 使卡片和表單居中 */
     }
 
     .feedback-form h2,

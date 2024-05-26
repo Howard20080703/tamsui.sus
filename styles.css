@@ -120,3 +120,21 @@ footer {
     text-align: center;
     margin-top: auto;
 }
+
+/* 媒體查詢 */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+    .link-card img {
+        width: 30px;
+        height: 30px;
+    }
+    .feedback-form {
+        max-width: 300px;
+    }
+}

@@ -40,7 +40,7 @@ h1 {
     align-items: center;
     justify-content: flex-start;
     width: 90%; /* 調整寬度 */
-    max-width: 350px; /* 限制最大寬度 */
+    max-width: 300px; /* 限制最大寬度 */
     margin: 10px 0;
     padding: 10px;
     background-color: #fff;

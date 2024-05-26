@@ -116,8 +116,8 @@ footer {
     padding: 10px;
     background-color: #333;
     color: #fff;
-    width: auto;
-    text-align: center;
+    width: 100%; /* 將寬度設置為100% */
+    text-align: center; /* 置中頁尾內容 */
     margin-top: auto; /* 確保頁腳位於底部 */
 }
 

@@ -125,7 +125,6 @@ footer {
     width: 100%;
     text-align: center;
     margin-top: auto; /* 確保頁腳位於底部 */
-    border: none; /* 移除白線 */
 }
 
 /* 移除 footer 底部的 margin 和 padding */

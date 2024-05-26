@@ -55,6 +55,8 @@ h1 {
     height: 40px;
     border-radius: 50%;
     margin-right: 15px;
+    max-width: 30px; /* 新增：限制圖片寬度 */
+    max-height: 30px; /* 新增：限制圖片高度 */
 }
 
 .link-card span {

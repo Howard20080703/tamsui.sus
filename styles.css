@@ -1,4 +1,5 @@
 /* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -77,6 +78,7 @@ h1 {
 
 .feedback-form h2 {
     margin-top: 0;
+    font-size: 20px; /* 調整標題字體大小 */
 }
 
 .feedback-form form {
@@ -119,11 +121,12 @@ footer {
     margin-top: auto; /* 確保頁腳位於底部 */
 }
 
-/* styles.css */
-
-/* 原有的 CSS */
-
 @media only screen and (max-width: 600px) {
+    .link-card,
+    .feedback-form {
+        max-width: 90%; /* 將元素最大寬度設為螢幕寬度的90% */
+    }
+
     .feedback-form h2,
     .link-card span {
         font-size: 14px !important; /* 強制優先使用此字體大小 */

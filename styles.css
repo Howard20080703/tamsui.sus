@@ -38,8 +38,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 90%;
-    max-width: 300px; /* 限制最大寬度 */
+    width: 100%;
+    max-width: 400px; /* 增加最大寬度 */
     margin: 10px auto; /* 調整邊距，確保居中 */
     padding: 10px;
     background-color: #fff;
@@ -47,6 +47,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.2s;
+    text-align: left; /* 確保文字靠左對齊 */
 }
 
 .link-card:hover {
@@ -64,7 +65,7 @@ h1 {
     color: #555;
     font-size: 14px; /* 調整字體大小 */
     flex: 1;
-    text-align: left;
+    text-align: left; /* 確保文字靠左對齊 */
 }
 
 .feedback-form {
@@ -86,6 +87,7 @@ h1 {
 .feedback-form form {
     display: flex;
     flex-direction: column;
+    align-items: center; /* 中心對齊 */
 }
 
 .feedback-form label {
@@ -98,6 +100,7 @@ h1 {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%; /* 占滿整個表單寬度 */
 }
 
 .feedback-form button {
@@ -108,6 +111,7 @@ h1 {
     color: #fff;
     cursor: pointer;
     transition: background-color 0.2s;
+    width: 100%; /* 占滿整個表單寬度 */
 }
 
 .feedback-form button:hover {

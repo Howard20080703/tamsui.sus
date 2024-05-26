@@ -1,0 +1,120 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 將內容置中對齊 */
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px; /* 確保頁腳不會被擋住 */
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.link-card:hover {
+    transform: scale(1.05);
+}
+
+.link-card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.link-card span {
+    color: #555;
+    font-size: 16px;
+    flex: 1;
+    text-align: left;
+}
+
+.feedback-form {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.feedback-form h2 {
+    margin-top: 0;
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form label {
+    margin-bottom: 5px;
+}
+
+.feedback-form textarea {
+    resize: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.feedback-form button:hover {
+    background-color: #555;
+}
+
+footer {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-top: auto; /* 確保頁腳位於底部 */
+}

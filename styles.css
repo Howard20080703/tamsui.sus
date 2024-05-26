@@ -7,6 +7,7 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: #f4f4f9;
+    overflow-x: hidden; /* 防止在手機上左右滑動 */
 }
 
 .container {
@@ -38,8 +39,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 80%; /* 調整寬度 */
-    max-width: 400px; /* 限制最大寬度 */
+    width: 90%; /* 調整寬度 */
+    max-width: 350px; /* 限制最大寬度 */
     margin: 10px 0;
     padding: 10px;
     background-color: #fff;
@@ -57,14 +58,14 @@ h1 {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 10px; /* 調整間距 */
     max-width: 40px; /* 調整圖片寬度 */
     max-height: 40px; /* 調整圖片高度 */
 }
 
 .link-card span {
     color: #555;
-    font-size: 16px;
+    font-size: 14px; /* 調整字體大小 */
     flex: 1;
     text-align: left;
 }
@@ -76,6 +77,7 @@ h1 {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
+    max-width: 500px; /* 限制最大寬度 */
 }
 
 .feedback-form h2 {
@@ -153,7 +155,7 @@ body > *:last-child {
     }
 
     .link-card img {
-        margin-right: 15px;
+        margin-right: 10px; /* 調整間距 */
         margin-bottom: 0;
     }
 

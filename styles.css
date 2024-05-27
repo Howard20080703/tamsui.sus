@@ -7,7 +7,7 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: #f4f4f9;
-    overflow-x: hidden; /* 防止在手機上左右滑動 */
+    overflow-x: hidden; /* 防止水平滾動 */
 }
 
 .container {
@@ -20,6 +20,7 @@ body {
     width: 100%;
     padding: 20px;
     margin: 0 auto; /* 使容器居中 */
+    box-sizing: border-box; /* 確保 padding 不會影響寬度計算 */
 }
 
 .logo {
@@ -39,8 +40,8 @@ h1 {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    max-width: 500px; /* 增加最大寬度 */
-    margin: 10px auto; /* 調整邊距，確保居中 */
+    max-width: 400px; /* 增加最大寬度 */
+    margin: 10px 0; /* 調整邊距，確保居中 */
     padding: 10px;
     background-color: #fff;
     border-radius: 15px;
@@ -77,6 +78,7 @@ h1 {
     width: 100%;
     max-width: 500px; /* 限制最大寬度 */
     margin: 0 auto; /* 使表單居中 */
+    box-sizing: border-box; /* 確保 padding 不會影響寬度計算 */
 }
 
 .feedback-form h2 {
@@ -119,12 +121,13 @@ h1 {
 }
 
 footer {
-    padding: 14px;
+    padding: 15px;
     background-color: #333;
     color: #fff;
     width: 100%;
     text-align: center;
     margin-top: auto; /* 確保頁腳位於底部 */
+    box-sizing: border-box; /* 確保 padding 不會影響寬度計算 */
 }
 
 /* 移除 footer 底部的 margin 和 padding */

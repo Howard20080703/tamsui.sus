@@ -98,6 +98,7 @@ h1 {
     resize: none;
     padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%; /* 占滿整個表單寬度 */
 }

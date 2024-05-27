@@ -1,5 +1,4 @@
 /* styles.css */
-
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -9,7 +8,6 @@ body {
     background-color: #f4f4f9;
     overflow-x: hidden; /* 防止在手機上左右滑動 */
 }
-
 .container {
     flex: 1;
     display: flex;
@@ -21,19 +19,16 @@ body {
     padding: 20px;
     margin: 0 auto; /* 使容器居中 */
 }
-
 .logo {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
-
 h1 {
     margin-top: 0;
     color: #333;
 }
-
 .link-card {
     display: flex;
     align-items: center;
@@ -43,31 +38,38 @@ h1 {
     margin: 10px auto; /* 調整邊距，確保居中 */
     padding: 10px;
     background-color: #fff;
+
+    
+          
+            
+    
+
+          
+          Expand Down
+    
+    
+  
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.2s;
     text-align: left; /* 確保文字靠左對齊 */
 }
-
 .link-card:hover {
     transform: scale(1.05);
 }
-
 .link-card img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-right: 10px; /* 調整間距 */
 }
-
 .link-card span {
     color: #555;
     font-size: 14px; /* 調整字體大小 */
     flex: 1;
     text-align: left; /* 確保文字靠左對齊 */
 }
-
 .feedback-form {
     margin-top: 20px;
     padding: 10px;
@@ -78,31 +80,26 @@ h1 {
     max-width: 500px; /* 限制最大寬度 */
     margin: 0 auto; /* 使表單居中 */
 }
-
 .feedback-form h2 {
     margin-top: 0;
     font-size: 20px; /* 調整標題字體大小 */
 }
-
 .feedback-form form {
     display: flex;
     flex-direction: column;
     align-items: center; /* 中心對齊 */
 }
-
 .feedback-form label {
     margin-bottom: 5px;
 }
-
 .feedback-form textarea {
     resize: none;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px #ccc;
+    border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%; /* 占滿整個表單寬度 */
 }
-
 .feedback-form button {
     padding: 10px;
     border: none;
@@ -113,50 +110,45 @@ h1 {
     transition: background-color 0.2s;
     width: 100%; /* 占滿整個表單寬度 */
 }
-
 .feedback-form button:hover {
     background-color: #555;
 }
-
 footer {
+    padding: 15px;
     background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 0.3em 0;
-    position: fixed;
+    color: #fff;
     width: 100%;
-    bottom: 0;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: auto; /* 確保頁腳位於底部 */
 }
-
+/* 移除 footer 底部的 margin 和 padding */
+body > *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 @media only screen and (max-width: 600px) {
     .container {
         padding: 10px; /* 調整容器內邊距 */
     }
-
     .link-card,
     .feedback-form {
         max-width: 90%; /* 將元素最大寬度設為螢幕寬度的90% */
         width: 100%;
         margin: 10px auto; /* 使卡片和表單居中 */
     }
-
     .feedback-form h2,
     .link-card span {
         font-size: 14px !important; /* 強制優先使用此字體大小 */
     }
-
     .link-card {
         flex-direction: row; /* 確保圖片和文字並排 */
         align-items: center;
         text-align: left;
     }
-
     .link-card img {
         margin-right: 10px; /* 調整間距 */
         margin-bottom: 0;
     }
-
     .link-card span {
         text-align: left;
     }

@@ -9,7 +9,7 @@ body, html {
     height: 100%;
     overflow-x: hidden; /* 禁止左右滾動 */
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9; /* 柔和的背景色 */
+    background-color: #ffdf5f; /* 柔和的背景色 */
 }
 
 .container {
@@ -19,7 +19,7 @@ body, html {
     padding: 20px;
     max-width: 500px; /* 限制最大寬度 */
     margin: 0 auto; /* 保證居中 */
-    background-color: #f4f4f9; /* 背景色為白色 */
+    background-color: #ffdf5f; /* 背景色為白色 */
     border-radius: 10px; /* 圓角 */
 }
 
@@ -28,7 +28,7 @@ body, html {
     height: 120px;
     border-radius: 50%;
     margin-bottom: 10px;
-    border-style:solid;
+    border-style:solid; /* 黑框 */
 }
 
 h1 {
@@ -49,6 +49,7 @@ h1 {
     margin: 10px 0;
     width: 100%;
     cursor: pointer;
+    border-style:solid; /* 黑框 */
     transition: transform 0.2s, box-shadow 0.9s;
 }
 
@@ -88,6 +89,7 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 陰影效果 */
+    border-style:solid; /* 黑框 */
 }
 
 .feedback-form label {

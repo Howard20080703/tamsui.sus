@@ -12,6 +12,12 @@ body, html {
     background-color: #f4f4f9; /* 柔和的背景色 */
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 讓內容和 footer 之間有空間 */
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -22,12 +28,14 @@ body, html {
     background-color: #ffffff; /* 背景色為白色 */
     border-radius: 10px; /* 圓角 */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 陰影效果 */
+    flex-grow: 1; /* 讓 container 佔滿可用空間 */
 }
 
 .logo {
     width: 150px;
     height: 150px;
     margin-bottom: 20px;
+    border-radius: 50%; /* 圓形 */
 }
 
 h1 {
@@ -126,9 +134,7 @@ footer {
     background-color: #ffffff;
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* 陰影效果 */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     color: #555555; /* 字體顏色 */
+    position: relative; /* 保證 footer 位置正確 */
+    bottom: 0;
 }

@@ -39,7 +39,7 @@ h1 {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    max-width: 400px; /* 增加最大寬度 */
+    max-width: 500px; /* 增加最大寬度 */
     margin: 10px auto; /* 調整邊距，確保居中 */
     padding: 10px;
     background-color: #fff;

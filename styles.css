@@ -10,12 +10,8 @@ body, html {
     overflow-x: hidden; /* 禁止左右滾動 */
     font-family: Arial, sans-serif;
     background-color: #f4f4f9; /* 柔和的背景色 */
-}
-
-body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* 讓內容和 footer 之間有空間 */
 }
 
 .container {
@@ -135,6 +131,5 @@ footer {
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* 陰影效果 */
     color: #555555; /* 字體顏色 */
-    position: relative; /* 保證 footer 位置正確 */
-    bottom: 0;
+    margin-top: auto; /* 保證 footer 在最底部 */
 }

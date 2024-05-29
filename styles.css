@@ -1,4 +1,4 @@
-/* styles.css */
+/* 原有的樣式 */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -136,4 +136,22 @@ footer {
     color: #555555; /* 字體顏色 */
 }
 
-/* 版權所有 靈魂鯊*/
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.counter-text {
+    font-size: 1rem;
+    color: #555555; /* 字體顏色 */
+    margin-right: 5px;
+}
+
+.counter {
+    width: 100px; /* 調整計數器圖片的大小 */
+    height: auto;
+}
+
+/* 版權所有 靈魂鯊 */

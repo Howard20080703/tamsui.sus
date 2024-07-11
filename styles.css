@@ -72,7 +72,6 @@ h1 {
 
 .feedback-form {
     width: 100%;
-    margin-top: 20px;
 }
 
 .feedback-form h2 {
@@ -87,7 +86,7 @@ h1 {
     flex-direction: column;
     background-color: #f9f9f9; /* 背景色 */
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 陰影效果 */
     border-style:solid; /* 黑框 */
 }
@@ -153,5 +152,70 @@ footer {
     width: 100px; /* 調整計數器圖片的大小 */
     height: auto;
 }
+
+.weather-card {
+    background: linear-gradient(to bottom right, #257ee3, #46b8ff);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 500px;
+    width: 100%;
+    border: solid #000;
+  }
+  
+  .weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .weather-header h2 {
+    font-size: 2.0em;
+    margin: 0;
+  }
+  
+  #weather-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .weather-body {
+    text-align: center;
+  }
+  
+  .temperature {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .description {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3em;
+  }
+  
+  .weather-footer {
+    margin-top: 10px;
+    font-size: 0.8em;
+    text-align: right;
+  }
+  
+  .weather-footer a {
+    color: #f0f0f0;
+    text-decoration: none;
+  }
+  
+  .weather-footer a:hover {
+    text-decoration: underline;
+  }
 
 /* 版權所有 靈魂鯊 */

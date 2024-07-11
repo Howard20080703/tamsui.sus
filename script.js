@@ -49,3 +49,32 @@ document.getElementById('feedbackForm').addEventListener('submit', function(e) {
         });
     });
 });
+const apiKey = '2518d57e9cf75f6675ec15fa34dfb1cc';
+const city = 'Tamsui';
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=zh_tw`;
+
+function fetchWeather() {
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const temperature = Math.round(data.main.temp);
+            const description = data.weather[0].description;
+            const humidity = data.main.humidity;
+            const windSpeed = data.wind.speed;
+            const icon = data.weather[0].icon;
+
+            document.getElementById('temperature').textContent = `${temperature}°C`;
+            document.getElementById('description').textContent = description;
+            document.getElementById('humidity').textContent = `濕度: ${humidity}%`;
+            document.getElementById('wind-speed').textContent = `風速: ${windSpeed} m/s`;
+            document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+        })
+        .catch(error => {
+            console.error('Error fetching weather data:', error);
+            document.getElementById('weather-info').textContent = '無法獲取天氣數據';
+        });
+}
+
+fetchWeather();
+// 每小時更新一次天氣數據
+setInterval(fetchWeather, 3600000);

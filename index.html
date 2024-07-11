@@ -26,7 +26,7 @@
             <img src="今天你淡水了嗎.png" alt="今天你淡水了嗎 Discord 伺服器">
             <span>今天你淡水了嗎 Discord 伺服器</span>
         </div>
-        <div class="link-card" onclick="window.location.href='https://ttk.entry.edu.tw/NoExamImitate_TP/NoExamImitateAdmissionList/AdmissionList.aspx'">
+        <div class="link-card" onclick="window.location.href=https://ttk.entry.edu.tw/NoExamImitate_TP/NoExamImitateAdmissionList/AdmissionList.aspx'">
             <img src="基北區高級中等學校免試入學.png" alt="基北區高級中等學校免試入學">
             <span>113基北免放榜查詢</span>
         </div>
@@ -38,14 +38,32 @@
             <img src="https://play-lh.googleusercontent.com/ZcYo7MXo6XuUzjbTPOE0Dz6p25QqB6mmkpYn0WNB8odFlVkpHrpozYENhUbFpcrSrGw" alt="問版主問題 (非投稿)">
             <span>問版主問題 (非投稿)</span>
         </div> 
+        <div class="weather-card">
+            <div class="weather-header">
+              <h2>淡水區即時天氣</h2>
+              <img id="weather-icon" src="" alt="Weather Icon">
+            </div>
+            <div class="weather-body">
+              <div class="temperature" id="temperature"></div>
+              <div class="description" id="description"></div>
+              <div class="details">
+                <span id="humidity"></span>
+                <span id="wind-speed"></span>
+              </div>
+            </div>
+            <div class="weather-footer">
+              資料來源：<a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
+            </div>
+          </div>
         <div class="feedback-form">
             <h2>意見改善單</h2>
             <form id="feedbackForm">
-                <label for="feedback">請填寫你要給予的意見：</label>
+                <label for="feedback">請填寫你要給予的意見（如需聯絡可留下IG）：</label>
                 <textarea id="feedback" name="feedback" rows="4" required></textarea>
                 <button type="submit">提交</button>
             </form>
         </div>
+        <br>
     </div>
     <br><br><br>
     <footer>

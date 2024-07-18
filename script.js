@@ -78,3 +78,27 @@ function fetchWeather() {
 fetchWeather();
 // 每小時更新一次天氣數據
 setInterval(fetchWeather, 3600000);
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const notice = document.getElementById('emergency-notice');
+    const closeButton = document.getElementById('close-notice');
+    
+    // 點擊關閉按鈕關閉通知
+    closeButton.addEventListener('click', () => {
+      notice.style.display = 'none';
+    });
+  
+    // 點擊通知外的區域關閉通知
+    document.addEventListener('click', (event) => {
+      if (!notice.contains(event.target)) {
+        notice.style.display = 'none';
+      }
+    });
+  
+    // 雙擊通知關閉
+    notice.addEventListener('dblclick', () => {
+      notice.style.display = 'none';
+    });
+  });
+
+// 此產品製作by靈魂鯊

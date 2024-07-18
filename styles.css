@@ -1,4 +1,3 @@
-/* 原有的樣式 */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -217,5 +216,98 @@ footer {
   .weather-footer a:hover {
     text-decoration: underline;
   }
+  
+  #emergency-notice {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .notice-content {
+    display: flex;
+    padding: 15px;
+    align-items: flex-start;
+  }
+  
+  .notice-icon {
+    font-size: 30px;
+    margin-right: 15px;
+    background-color: #ffad0a;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .notice-text {
+    flex: 1;
+  }
+  
+  .notice-text h4 {
+    margin: 0 0 5px;
+    color: #000;
+    font-size: 18px;
+  }
+  
+  .notice-text p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  details {
+    margin-top: 10px;
+  }
+  
+  summary {
+    color: #007aff;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  details p {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #333;
+  }
 
+  #close-notice {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #999;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 1;
+  }
+  
+  #close-notice:hover {
+    color: #666;
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateX(-50%) translateY(-125%); }
+    to { transform: translateX(-50%) translateY(0); }
+  }
+  
+  #emergency-notice {
+    animation: slideIn 1.1s ease-out;
+  }
+  
 /* 版權所有 靈魂鯊 */

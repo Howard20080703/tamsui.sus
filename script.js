@@ -101,4 +101,61 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
   });
 
+
+   //颱風
+
+ function fetchTyphoonImages() {
+    const typhoonNews = document.getElementById('typhoon-news');
+    const typhoonSatellite = document.getElementById('typhoon-satellite');
+    const lastUpdated = document.getElementById('last-updated');
+    
+    const timestamp = new Date().getTime();
+    
+    typhoonNews.src = `https://www.cwa.gov.tw/Data/typhoon/TY_NEWS/PTA_202407200600-120_zhtw.png?t=${timestamp}`;
+    typhoonSatellite.src = `https://www.cwa.gov.tw/Data/satellite/TWI_IR1_CR_800/TWI_IR1_CR_800.jpg?t=${timestamp}`;
+    
+    const now = new Date();
+    lastUpdated.textContent = `最後更新: ${now.toLocaleString('zh-TW')}`;
+    
+    typhoonNews.onerror = function() {
+        console.error('Error loading typhoon news image');
+        typhoonNews.alt = '無法載入颱風消息圖片';
+    };
+    typhoonSatellite.onerror = function() {
+        console.error('Error loading satellite image');
+        typhoonSatellite.alt = '無法載入衛星雲圖';
+    };
+}
+
+function setupImageSwitching() {
+    const newsContainer = document.getElementById('typhoon-news-container');
+    const satelliteContainer = document.getElementById('typhoon-satellite-container');
+    const showNewsButton = document.getElementById('show-news');
+    const showSatelliteButton = document.getElementById('show-satellite');
+
+    showNewsButton.addEventListener('click', () => {
+        newsContainer.classList.add('active');
+        satelliteContainer.classList.remove('active');
+        showNewsButton.classList.add('active');
+        showSatelliteButton.classList.remove('active');
+    });
+
+    showSatelliteButton.addEventListener('click', () => {
+        satelliteContainer.classList.add('active');
+        newsContainer.classList.remove('active');
+        showSatelliteButton.classList.add('active');
+        showNewsButton.classList.remove('active');
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetchWeather();
+    fetchTyphoonImages();
+    setupImageSwitching();
+    
+    setInterval(fetchWeather, 3600000);
+    
+    setInterval(fetchTyphoonImages, 1800000);
+});
+
 // 此產品製作by靈魂鯊

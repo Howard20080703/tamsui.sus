@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
     const timestamp = new Date().getTime();
     
-    typhoonNews.src = `https://www.cwa.gov.tw/Data/typhoon/TY_NEWS/PTA_202407200600-120_zhtw.png?t=${timestamp}`;
+    typhoonNews.src = `https://www.cwa.gov.tw/Data/typhoon/TY_NEWS/PTA_202407201200-120_zhtw.png?t=${timestamp}`;
     typhoonSatellite.src = `https://www.cwa.gov.tw/Data/satellite/TWI_IR1_CR_800/TWI_IR1_CR_800.jpg?t=${timestamp}`;
     
     const now = new Date();
@@ -153,9 +153,9 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchTyphoonImages();
     setupImageSwitching();
     
-    setInterval(fetchWeather, 3600000);
+    setInterval(fetchWeather, 1);
     
-    setInterval(fetchTyphoonImages, 1800000);
+    setInterval(fetchTyphoonImages, 1);
 });
 
 // 此產品製作by靈魂鯊

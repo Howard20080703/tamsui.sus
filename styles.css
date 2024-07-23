@@ -1,313 +1,353 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body, html {
-    height: 100%;
-    overflow-x: hidden; /* 禁止左右滾動 */
-    font-family: Arial, sans-serif;
-    background-color: #ffdf5f; /* 柔和的背景色 */
+  height: 100%;
+  overflow-x: hidden; /* 禁止左右滾動 */
+  font-family: Arial, sans-serif;
+  background-color: #ffdf5f; /* 柔和的背景色 */
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    max-width: 500px; /* 限制最大寬度 */
-    margin: 0 auto; /* 保證居中 */
-    background-color: #ffdf5f; /* 背景色為白色 */
-    border-radius: 10px; /* 圓角 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 500px; /* 限制最大寬度 */
+  margin: 0 auto; /* 保證居中 */
+  background-color: #ffdf5f; /* 背景色為白色 */
+  border-radius: 10px; /* 圓角 */
 }
 
 .logo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    border-style:solid; /* 黑框 */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border-style:solid; /* 黑框 */
 }
 
 h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333333; /* 字體顏色 */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333333; /* 字體顏色 */
 }
 
 .link-card {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    margin: 10px 0;
-    width: 100%;
-    cursor: pointer;
-    border-style:solid; /* 黑框 */
-    transition: transform 0.2s, box-shadow 0.9s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  cursor: pointer;
+  border-style:solid; /* 黑框 */
+  transition: transform 0.2s, box-shadow 0.9s;
 }
 
 .link-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .link-card img {
-    width: 50px; /* 圖片大小 */
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
+  width: 50px; /* 圖片大小 */
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .link-card span {
-    font-size: 1rem;
-    color: #555555; /* 字體顏色 */
+  font-size: 1rem;
+  color: #555555; /* 字體顏色 */
 }
 
 .feedback-form {
-    width: 100%;
+  width: 100%;
 }
 
 .feedback-form h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #333333; /* 字體顏色 */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333333; /* 字體顏色 */
 }
 
 .feedback-form form {
-    display: flex;
-    flex-direction: column;
-    background-color: #f9f9f9; /* 背景色 */
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 陰影效果 */
-    border-style:solid; /* 黑框 */
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9; /* 背景色 */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 陰影效果 */
+  border-style:solid; /* 黑框 */
 }
 
 .feedback-form label {
-    font-size: 1rem;
-    margin-bottom: 5px;
-    color: #555555; /* 字體顏色 */
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #555555; /* 字體顏色 */
 }
 
 .feedback-form textarea {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: none;
-    margin-bottom: 10px;
-    background-color: #ffffff; /* 背景色 */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  margin-bottom: 10px;
+  background-color: #ffffff; /* 背景色 */
 }
 
 .feedback-form button {
-    padding: 10px;
-    font-size: 1rem;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
 
 .feedback-form button:hover {
-    background-color: #545454;
+  background-color: #545454;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #ffffff;
-    width: 100%;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* 陰影效果 */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: #555555; /* 字體顏色 */
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* 陰影效果 */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #555555; /* 字體顏色 */
 }
 
 .counter-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .counter-text {
-    font-size: 1rem;
-    color: #555555; /* 字體顏色 */
-    margin-right: 5px;
+  font-size: 1rem;
+  color: #555555; /* 字體顏色 */
+  margin-right: 5px;
 }
 
 .counter {
-    width: 100px; /* 調整計數器圖片的大小 */
-    height: auto;
+  width: 100px; /* 調整計數器圖片的大小 */
+  height: auto;
 }
 
 .weather-card {
-    background: linear-gradient(to bottom right, #257ee3, #46b8ff);
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    margin: 20px 0;
-    max-width: 500px;
-    width: 100%;
-    border: solid #000;
-  }
-  
-  .weather-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .weather-header h2 {
-    font-size: 2.0em;
-    margin: 0;
-  }
-  
-  #weather-icon {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .weather-body {
-    text-align: center;
-  }
-  
-  .temperature {
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .description {
-    font-size: 1.3em;
-    margin-bottom: 10px;
-  }
-  
-  .details {
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.3em;
-  }
-  
-  .weather-footer {
-    margin-top: 10px;
-    font-size: 0.8em;
-    text-align: right;
-  }
-  
-  .weather-footer a {
-    color: #f0f0f0;
-    text-decoration: none;
-  }
-  
-  .weather-footer a:hover {
-    text-decoration: underline;
-  }
-  
-  #emergency-notice {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 400px;
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
-    overflow: hidden;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  }
-  
-  .notice-content {
-    display: flex;
-    padding: 15px;
-    align-items: flex-start;
-  }
-  
-  .notice-icon {
-    font-size: 30px;
-    margin-right: 15px;
-    background-color: #ffad0a;
-    color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .notice-text {
-    flex: 1;
-  }
-  
-  .notice-text h4 {
-    margin: 0 0 5px;
-    color: #000;
-    font-size: 18px;
-  }
-  
-  .notice-text p {
-    margin: 0;
-    color: #666;
-    font-size: 14px;
-  }
-  
-  details {
-    margin-top: 10px;
-  }
-  
-  summary {
-    color: #007aff;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
-  details p {
-    margin-top: 10px;
-    font-size: 13px;
-    line-height: 1.4;
-    color: #333;
-  }
+  background: linear-gradient(to bottom right, #257ee3, #46b8ff);
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 500px;
+  width: 100%;
+  border: solid #000;
+}
 
-  #close-notice {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: #999;
-    cursor: pointer;
-    padding: 5px;
-    line-height: 1;
-  }
-  
-  #close-notice:hover {
-    color: #666;
-  }
-  
-  @keyframes slideIn {
-    from { transform: translateX(-50%) translateY(-125%); }
-    to { transform: translateX(-50%) translateY(0); }
-  }
-  
-  #emergency-notice {
-    animation: slideIn 1.1s ease-out;
-  }
-  
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.weather-header h2 {
+  font-size: 2.0em;
+  margin: 0;
+}
+
+#weather-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.weather-body {
+  text-align: center;
+}
+
+.temperature {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.3em;
+}
+
+.weather-footer {
+  margin-top: 10px;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+.weather-footer a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.weather-footer a:hover {
+  text-decoration: underline;
+}
+
+#emergency-notice {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.notice-content {
+  display: flex;
+  padding: 15px;
+  align-items: flex-start;
+}
+
+.notice-icon {
+  font-size: 30px;
+  margin-right: 15px;
+  background-color: #c7ebff;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notice-text {
+  flex: 1;
+}
+
+.notice-text h4 {
+  margin: 0 0 5px;
+  color: #000;
+  font-size: 18px;
+}
+
+.notice-text p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+details {
+  margin-top: 10px;
+}
+
+summary {
+  color: #007aff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+details p {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #333;
+}
+
+#close-notice {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #999;
+  cursor: pointer;
+  padding: 5px;
+  line-height: 1;
+}
+
+#close-notice:hover {
+  color: #666;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-50%) translateY(-125%); }
+  to { transform: translateX(-50%) translateY(0); }
+}
+
+#emergency-notice {
+  animation: slideIn 1.1s ease-out;
+}
+.typhoon-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 500px;
+  width: 100%;
+  border: solid #000;
+}
+
+.typhoon-header {
+  margin-bottom: 15px;
+}
+
+.typhoon-header h2 {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+.typhoon-body p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.typhoon-footer {
+  margin-top: 15px;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+.typhoon-footer a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.typhoon-footer a:hover {
+  text-decoration: underline;
+}
+
 /* 版權所有 靈魂鯊 */

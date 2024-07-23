@@ -343,17 +343,14 @@ details p {
 #typhoon-closure-table tr:nth-child(even) {
   background-color: #f9f9f9;
 }
-#typhoon-closure-table .update-time {
-  text-align: right;
-  color: #666;
-  font-size: 0.8em;
-  margin-top: 20px;
-}
 #typhoon-closure-table .update-time, #typhoon-closure-table .data-source {
   text-align: right;
   color: #666;
   font-size: 0.8em;
   margin-top: 10px;
+}
+#typhoon-closure-table .closed {
+  color: red;
 }
 
 /* 版權所有 靈魂鯊 */

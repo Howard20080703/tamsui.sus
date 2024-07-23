@@ -87,9 +87,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     closeButton.addEventListener('click', () => {
       notice.style.display = 'none';
     });
+    closeButton.addEventListener('touchend', () => {
+      notice.style.display = 'none';
+    });
   
     // 點擊通知外的區域關閉通知
     document.addEventListener('click', (event) => {
+      if (!notice.contains(event.target)) {
+        notice.style.display = 'none';
+      }
+    });
+    document.addEventListener('touchend', (event) => {
       if (!notice.contains(event.target)) {
         notice.style.display = 'none';
       }
@@ -99,8 +107,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     notice.addEventListener('dblclick', () => {
       notice.style.display = 'none';
     });
-  });
-
+    notice.addEventListener('touchend', (event) => {
+      if (event.detail === 2) { // 檢查雙擊
+        notice.style.display = 'none';
+      }
+    });
+});
 
    //颱風
 

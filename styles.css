@@ -332,7 +332,9 @@ details p {
   width: 100%;
 }
 
+#typhoon-closure-table th,
 #typhoon-closure-table td {
+  padding: 10px;
   white-space: nowrap;
 }
 
